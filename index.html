@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1f382f">
+    <meta name="description" content="A heartfelt birthday celebration made especially for Sonia.">
+    <title>Happy Birthday, Sonia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="welcome-screen" id="welcomeScreen">
+      <div class="welcome-bloom bloom-one" aria-hidden="true"></div>
+      <div class="welcome-bloom bloom-two" aria-hidden="true"></div>
+      <div class="welcome-content">
+        <p class="welcome-date">A little celebration · 11 July 2026</p>
+        <span class="welcome-for">For</span>
+        <h1>Sonia</h1>
+        <p class="welcome-copy">Something beautiful is waiting for you.</p>
+        <button class="enter-button" id="enterButton" type="button">
+          <span>Enter the celebration</span>
+          <i aria-hidden="true">→</i>
+        </button>
+        <button class="enter-quietly" id="enterQuietly" type="button">Enter without music</button>
+      </div>
+      <p class="welcome-signature">made with love</p>
+    </div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="monogram" href="#home" aria-label="Back to the beginning">S</a>
+      <nav aria-label="Birthday page navigation">
+        <a href="#letter">A note</a>
+        <a href="#memories">Memories</a>
+        <a href="#wish">Make a wish</a>
+      </nav>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-label="Turn celebration sounds on" aria-pressed="false">
+        <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="sound-label">Play song</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <p class="eyebrow reveal">12 · 07 · 2026 <span></span> a beautiful day</p>
+        <div class="hero-title reveal">
+          <span>Happy</span>
+          <h1>Birthday</h1>
+          <strong>Sonia</strong>
+        </div>
+        <div class="hero-spark spark-one" aria-hidden="true">✦</div>
+        <div class="hero-spark spark-two" aria-hidden="true">✦</div>
+        <div class="hero-spark spark-three" aria-hidden="true">✧</div>
+        <p class="hero-copy reveal">Today, the world pauses for a moment<br>to celebrate the light you bring into it.</p>
+        <button class="primary-button reveal" id="openLetter" type="button">
+          Open your birthday note
+          <span aria-hidden="true">↗</span>
+        </button>
+        <div class="scroll-note" aria-hidden="true"><span></span> scroll to celebrate</div>
+      </section>
+
+      <section class="letter-section" id="letter">
+        <div class="section-number reveal" aria-hidden="true">01</div>
+        <div class="letter-intro reveal">
+          <p class="kicker">A little note</p>
+          <h2>For the girl who makes ordinary days feel <em>golden.</em></h2>
+        </div>
+        <article class="letter-card reveal">
+          <div class="letter-stamp" aria-hidden="true">with<br>love</div>
+          <p>Dear Sonia,</p>
+          <p>May this new year of your life bring you soft mornings, brave dreams, loud laughter, and the kind of happiness that stays.</p>
+          <p>May you always remember how deeply you are loved, how effortlessly you brighten a room, and how much more beautiful the world is with you in it.</p>
+          <p>Keep dreaming. Keep smiling. Keep being wonderfully, unmistakably you.</p>
+          <p class="signature">Happy birthday, beautiful.</p>
+        </article>
+      </section>
+
+      <section class="memories-section" id="memories">
+        <div class="section-number reveal" aria-hidden="true">02</div>
+        <div class="memories-copy reveal">
+          <p class="kicker">A favorite chapter</p>
+          <h2>Some moments deserve to live <em>forever.</em></h2>
+          <p>Every frame holds a little laughter, a little chaos, and a whole lot of love.</p>
+        </div>
+        <figure class="photo-card reveal">
+          <div class="photo-wrap">
+            <img src="image/whatsapp%20image%202026-07-11%20at%204.18.55%20pm.jpeg" alt="A collage of Sonia sharing joyful moments with a friend">
+          </div>
+          <figcaption>
+            <span>Us, in our happiest colors</span>
+            <small>one photo, a hundred stories</small>
+          </figcaption>
+        </figure>
+        <div class="memory-quote reveal">
+          <span aria-hidden="true">“</span>
+          <p>Life is better with a friend who feels like sunshine.</p>
+        </div>
+      </section>
+
+      <section class="wish-section" id="wish">
+        <div class="wish-stars" aria-hidden="true">✦ <span>✦</span> ✦</div>
+        <p class="kicker reveal">One final thing</p>
+        <h2 class="reveal">Close your eyes.<br><em>Make a wish.</em></h2>
+        <div class="cake-scene reveal" aria-label="A birthday cake with a candle">
+          <div class="flame" id="flame" aria-hidden="true"></div>
+          <div class="candle"><span></span></div>
+          <div class="cake-top"></div>
+          <div class="cake-body"><span>SONIA</span></div>
+          <div class="cake-plate"></div>
+        </div>
+        <button class="wish-button reveal" id="wishButton" type="button">Blow out the candle</button>
+        <p class="wish-hint reveal" id="wishHint">Tap when your wish is ready</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with <span aria-label="love">♥</span> for Sonia</p>
+      <a href="#home">Celebrate again ↑</a>
+    </footer>
+
+    <dialog class="letter-dialog" id="letterDialog">
+      <button class="dialog-close" id="closeLetter" type="button" aria-label="Close birthday note">×</button>
+      <p class="kicker">Especially for you</p>
+      <h2>Happy birthday,<br><em>Sonia.</em></h2>
+      <p>Here’s to another trip around the sun—and to all the magic waiting for you along the way.</p>
+      <div class="dialog-heart" aria-hidden="true">♥</div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">Your wish is on its way ✦</div>
+    <div class="music-status" id="musicStatus" aria-live="polite">
+      <span class="music-note" aria-hidden="true">♪</span>
+      <span>Happy Birthday is playing</span>
+    </div>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
